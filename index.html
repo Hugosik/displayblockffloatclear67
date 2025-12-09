@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Display,float,clear</title>
+    <style>
+
+        body {
+            font-family: Arial;
+            background-color: white;
+        }
+
+        header {
+            height: 100px;
+            width: 100%;
+            display: block;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            align-items: center;
+            float:left;
+        }
+
+        .kontener {
+            width: 100%;
+            height: 400px;
+        }
+
+        section {
+            height: 400px;
+            width: 31.1%;
+            display: block; 
+            float: left; 
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #section1 {
+            background-color: gold;
+        }
+
+        #section2 {
+            background-color: orange; 
+        }
+
+        #section3 {
+            background-color: red;
+        }
+
+        footer {
+            height: 100px;
+            width: 100%;
+            display: block;
+            background-color: lightblue     ;
+            color: black;
+            text-align: center;
+            float:left;
+            clear:both;
+        
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HEADER: display: block; (100px wysokości)</h1>
+    </header>
+
+    <div class="kontener">
+        <section id="section1">
+            <h2>SEKCJA 1</h2>
+            <p>display: block;</p>
+            <p>float: left;</p>
+        </section>
+
+        <section id="section2">
+            <h2>SEKCJA 2</h2>
+            <p>display: block;</p>
+            <p>float: left;</p>
+        </section>
+
+        <section id="section3">
+            <h2>SEKCJA 3</h2>
+            <p>display: block;</p>
+            <p>float: left;</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>FOOTER: display: block; (100px wysokości)</p>
+        <p>Potrzebuje clear: both; aby wrócić na dół!</p>
+    </footer>
+
+</body>
+</html>
